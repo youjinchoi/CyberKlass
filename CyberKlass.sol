@@ -552,13 +552,13 @@ contract CyberKlass is Context, IBEP20, Ownable {
     uint8 private constant _decimals = 18;
 
     uint256 public _defaultRewardTaxRate = 3;
-    uint256 public _sellerRewardTaxRate = 9;
+    uint256 public _sellerRewardTaxRate = 6;
 
     uint256 public _defaultDevelopmentTaxRate = 2;
-    uint256 public _sellerDevelopmentTaxRate = 6;
+    uint256 public _sellerDevelopmentTaxRate = 4;
 
     uint256 public _defaultLiquidityTaxRate = 5;
-    uint256 public _sellerLiquidityTaxRate = 15;
+    uint256 public _sellerLiquidityTaxRate = 10;
 
     IPancakeRouter02 public _pancakeRouter;
     address public _pancakePair;
@@ -573,10 +573,10 @@ contract CyberKlass is Context, IBEP20, Ownable {
     uint256 public _numTokensSellToAddToLiquidity = 5000000 * 10**18;
 
     // LP token lock release time
-    uint256 public constant _releaseTime = 1626224400;   // Wednesday, July 14, 2021 8:00:00 AM GMT+07:00
+    uint256 public constant _releaseTime = 1659286799;   // Sunday, July 31, 2022 11:59:59 PM GMT+07:00
 
-    address public _developmentFeeHolder = 0xF33751E60647C3c6f3525CdA3A80995a86Ee3811;
-    address public _liquidityFeeHolder = 0x7b18D2Be18f31ab13c3D89d86680742eaBD95519;
+    address public _developmentFeeHolder = 0xE1B5C8997D5C4Fb8c0463f090e98Da1D0203B36E;
+    address public _liquidityFeeHolder = 0x9520e677C1E8D4e1144bcd6e3d4a37889f6E85EB;
 
     event SwapAndLiquifyEnabledUpdated(bool enabled);
     event SwapAndLiquify(
